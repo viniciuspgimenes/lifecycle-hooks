@@ -1,0 +1,27 @@
+.btn-group {
+  width:100%;
+
+  > button {
+    text-align: center;
+    width: 12.5%;
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 0; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+
+    &:hover {
+      background-color: #3e8e41;
+    }
+
+    &:not(:last-child) {
+      border-right: none; /* Prevent double borders */
+    }
+  }
+
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

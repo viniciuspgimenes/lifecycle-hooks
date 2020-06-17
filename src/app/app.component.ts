@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lifecycle-hooks';
+  hookName: string;
+
+  changeComponent(hookName: string) {
+    this.hookName = hookName;
+  }
 }
