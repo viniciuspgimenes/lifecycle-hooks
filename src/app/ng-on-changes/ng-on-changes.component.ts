@@ -30,6 +30,6 @@ export class NgOnChangesComponent {
   constructor() {
     setTimeout(() => {
       this.arbitraryData = 'final';
-    }, 5000);
+    }, 3000);
   }
 }

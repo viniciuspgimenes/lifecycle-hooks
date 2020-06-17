@@ -17,7 +17,7 @@ export class CComponent { }
   `
 })
 export class BComponent implements AfterViewInit {
-  @ViewChild("BStatement", { read: ElementRef }) pStmt: ElementRef;
+  @ViewChild('BStatement', { read: ElementRef }) pStmt: ElementRef;
 
   constructor(private renderer: Renderer2) { }
 

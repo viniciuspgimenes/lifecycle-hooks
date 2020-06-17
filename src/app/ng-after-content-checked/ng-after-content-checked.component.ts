@@ -18,7 +18,7 @@ export class CComponent { }
   `
 })
 export class BComponent implements AfterContentChecked {
-  @ContentChild("BHeader", { read: ElementRef }) hRef: ElementRef;
+  @ContentChild('BHeader', { read: ElementRef }) hRef: ElementRef;
   @ContentChild(CComponent, { read: ElementRef }) cRef: ElementRef;
 
   constructor(private renderer: Renderer2) { }
